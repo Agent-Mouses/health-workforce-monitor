@@ -105,6 +105,12 @@ const TIER3: FeedEntry[] = [
   { name: 'GNews: AI healthcare workforce', url: gn('AI healthcare workforce OR "artificial intelligence" nursing OR "AI" "health workers"'), tier: 3, category: 'workforce-policy', tags: ['AI', 'technology'] },
   // Opioid
   { name: 'GNews: opioid treatment workforce', url: gn('opioid treatment workforce OR buprenorphine provider OR "MAT" "medication-assisted"'), tier: 3, category: 'workforce-policy', tags: ['opioid', 'OUD'] },
+  // Patient safety & staffing (dissertation topic)
+  { name: 'GNews: nurse staffing patient safety', url: gn('"patient safety" nurse staffing OR "nurse-to-patient ratio" outcomes'), tier: 3, category: 'nursing', tags: ['patient-safety', 'staffing'] },
+  // Value-based care & payment reform
+  { name: 'GNews: value-based care workforce', url: gn('"value-based" care workforce OR "primary care payment reform" OR "alternative payment model"'), tier: 3, category: 'workforce-policy', tags: ['VBP', 'payment-reform'] },
+  // Direct Primary Care / Concierge (HWRC research)
+  { name: 'GNews: direct primary care', url: gn('"direct primary care" OR "concierge medicine" OR DPC physician'), tier: 3, category: 'workforce-policy', tags: ['DPC', 'primary-care'] },
 ];
 
 export const ALL_FEEDS: FeedEntry[] = [...TIER1, ...TIER2, ...TIER3];

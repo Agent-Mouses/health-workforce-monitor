@@ -56,6 +56,9 @@ const RULES: Array<{ re: RegExp; level: ThreatLevel; category: WorkforceCategory
   { re: /nurse.{0,5}(union|collective\s+bargain|CBA)/i, level: 'MEDIUM', category: 'labor' },
   { re: /opioid.{0,15}(workforce|treatment|provider|buprenorphine)/i, level: 'MEDIUM', category: 'workforce-pipeline' },
   { re: /\bAI\b.{0,15}(healthcare|nursing|health\s+worker|clinical)/i, level: 'MEDIUM', category: 'telehealth' },
+  { re: /patient\s+safety.{0,15}(staffing|nurs|ratio)|nurs.{0,10}patient\s+(outcome|safety|harm)/i, level: 'MEDIUM', category: 'nursing-workforce' },
+  { re: /value.?based.{0,10}(care|payment|model).{0,15}(workforce|staffing|provider)/i, level: 'MEDIUM', category: 'general' },
+  { re: /direct\s+primary\s+care|\bDPC\b.{0,10}(model|physician|practice)/i, level: 'LOW', category: 'general' },
 
   // ── LOW ──
   { re: /staffing\s+ratio|nurse.?to.?patient/i, level: 'LOW', category: 'nursing-workforce' },
