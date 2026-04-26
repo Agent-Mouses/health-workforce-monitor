@@ -1,5 +1,7 @@
 # Health Workforce Monitor
 
+> **AI Agent?** Read **[AI-GUIDE.md](AI-GUIDE.md)** for project orientation and operations.
+
 Health workforce news intelligence API — RSS aggregation with keyword classification.
 
 Tracks nursing workforce, community health workers, rural health, Medicaid policy, workforce pipeline, and international recruitment news.
